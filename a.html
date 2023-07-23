@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Redirect Page</title>
+    <title>External ID Verification Service Simulator</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
         body {
@@ -19,7 +19,9 @@
     </style>
 </head>
 <body>
-    <h1>Click to Redirect</h1>
-    <p><a href="https://65942.od.facebook.com/mobile/zero/redirect/mobile_center/">Click here to redirect</a></p>
+    <h1>Clicking on this link will redirect the user to this url: "https://facebook.com/carrier_esim/id_verification_result?is_verification_succeeded={true}"</h1>
+    <p><a href="https://facebook.com/carrier_esim/id_verification_result?is_verification_succeeded={true}">ID verification succeeded</a></p>
+        <h1>Clicking on this link will redirect the user to this url: "https://facebook.com/carrier_esim/id_verification_result?is_verification_succeeded={false}"</h1>
+    <p><a href="https://facebook.com/carrier_esim/id_verification_result?is_verification_succeeded={false}">ID verification failed</a></p>
 </body>
 </html>
