@@ -32,17 +32,19 @@
         .red-button {
             background-color: red;
         }
-        .blue-button {
-            background-color: blue;
-        }
     </style>
+    <script>
+        function handleButtonClick(url) {
+            window.open(url, "_blank"); // Redirect to the given URL in a new tab
+            window.close(); // Close the current browser window
+        }
+    </script>
 </head>
 <body>
     <h1>External ID Verification Service Simulator</h1>
     <div class="button-container">
-        <p><a class="button green-button" href="fb://carrier_esim/id_verification_result?is_verification_succeeded=true">ID verification succeeded</a></p>
-        <p><a class="button red-button" href="fb://carrier_esim/id_verification_result?is_verification_succeeded=false">ID verification failed</a></p>
-        <p><a class="button blue-button" href="https://www.facebook.com/bar_dvash/">XCarrierMonEsimIDVerificationResultRedirectController</a></p>
+        <p><button class="button green-button" onclick="handleButtonClick('fb://carrier_esim/id_verification_result?is_verification_succeeded=true')">ID verification succeeded</button></p>
+        <p><button class="button red-button" onclick="handleButtonClick('fb://carrier_esim/id_verification_result?is_verification_succeeded=false')">ID verification failed</button></p>
     </div>
 </body>
 </html>
