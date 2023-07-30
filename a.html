@@ -16,12 +16,30 @@
             font-size: 18px;
             margin-bottom: 20px;
         }
+        .button-container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+        .green-button, .red-button {
+            display: inline-block;
+            background-color: green;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            width: 150px; /* Adjust the width as needed */
+        }
+        .red-button {
+            background-color: red;
+        }
     </style>
 </head>
 <body>
-    <h1>Clicking on this link will redirect the user to this url: "https://facebook.com/carrier_esim/id_verification_result?is_verification_succeeded={true}"</h1>
-    <p><a href="https://facebook.com/carrier_esim/id_verification_result?is_verification_succeeded={true}">ID verification succeeded</a></p>
-        <h1>Clicking on this link will redirect the user to this url: "https://facebook.com/carrier_esim/id_verification_result?is_verification_succeeded={false}"</h1>
-    <p><a href="https://facebook.com/carrier_esim/id_verification_result?is_verification_succeeded={false}">ID verification failed</a></p>
+    <h1>External ID Verification Service Simulator</h1>
+    <div class="button-container">
+        <p><a class="green-button" href="https://facebook.com/carrier_esim/id_verification_result?is_verification_succeeded={true}">ID verification succeeded</a></p>
+        <p><a class="red-button" href="https://facebook.com/carrier_esim/id_verification_result?is_verification_succeeded={false}">ID verification failed</a></p>
+    </div>
 </body>
 </html>
